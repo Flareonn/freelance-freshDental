@@ -430,12 +430,29 @@ img {
     font-size: 2em; }
   .footer-block {
     width: 100%; }
-  .main__title {
-    font-size: 70px; }
+  .main__title, .main__descr {
+    font-size: 35px;
+    line-height: inherit; }
+  .main__button_right, .main__button_left {
+    background-color: #2eb1e3;
+    background-image: none;
+    width: 200px;
+    height: 150px;
+    border-radius: 50px; }
+  .main__button_left {
+    background-color: #61b74b; }
   .main {
-    background-position: -750px; }
+    background-position: -250px; }
   .stock-bg {
     background-color: #61b74b; } }
+
+@media (max-width: 768px) {
+  .slick-slide {
+    border: none; }
+  .stock-card__descr {
+    font-size: 16px; }
+  .stock-card-icon {
+    width: 50%; } }
 
 /*
 	@media (min-width: 1200px) and (max-width: 1799.98px) // col-xl
@@ -447,6 +464,24 @@ img {
 	@media (min-width: 576px) and (max-width: 767.98px) // col-sm
 
 	@media (max-width: 575.98px) */
+.popup {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  position: fixed;
+  content: '';
+  display: none; }
+
+.popup-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 3px 5px 37px 9px rgba(0, 0, 0, 0.14); }
+
 /*
 	Примеры вариаций названий блоков
 	@import 'interface'
